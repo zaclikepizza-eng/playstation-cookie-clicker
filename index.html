@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker PS Edition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="console-shell">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">PS</span>
+          <div>
+            <p class="label">PLAYSTATION</p>
+            <h1>COOKIE CLICKER</h1>
+          </div>
+        </div>
+        <div class="status">
+          <span class="dot"></span>
+          <span>ONLINE</span>
+        </div>
+      </header>
+
+      <main class="game-layout">
+        <section class="left-panel panel">
+          <div class="panel-header">
+            <span class="heading-tag">STATS</span>
+          </div>
+
+          <div class="stat-box accent">
+            <span>Cookies</span>
+            <strong id="cookieCount">0</strong>
+          </div>
+
+          <div class="stat-box">
+            <span>Per Click</span>
+            <strong id="clickPower">1</strong>
+          </div>
+
+          <div class="stat-box">
+            <span>Per Second</span>
+            <strong id="cpsValue">0</strong>
+          </div>
+
+          <div class="stat-box">
+            <span>Total Baked</span>
+            <strong id="totalCookies">0</strong>
+          </div>
+        </section>
+
+        <section class="center-panel">
+          <div class="cookie-zone">
+            <button id="cookieButton" class="cookie-button" aria-label="Bake a cookie">
+              <span class="cookie-shadow"></span>
+              <span class="cookie-emoji">🍪</span>
+            </button>
+          </div>
+
+          <div class="console-bar">
+            <div class="bar-item">
+              <span>LEVEL</span>
+              <strong id="playerLevel">1</strong>
+            </div>
+            <div class="bar-item">
+              <span>BOOST</span>
+              <strong id="boostValue">x1</strong>
+            </div>
+            <div class="bar-item">
+              <span>ACHV</span>
+              <strong id="achievementCount">0/5</strong>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-panel panel">
+          <div class="panel-header">
+            <span class="heading-tag">UPGRADES</span>
+          </div>
+          <div id="shopList" class="shop-list"></div>
+        </aside>
+      </main>
+
+      <footer class="bottom-panel panel">
+        <div class="panel-header">
+          <span class="heading-tag">TROPHIES</span>
+        </div>
+        <div id="achievementList" class="achievement-list"></div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
